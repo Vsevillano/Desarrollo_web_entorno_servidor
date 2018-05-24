@@ -1,0 +1,169 @@
+@font-face { 
+    font-family: 'Abril_Fatface'; 
+    src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
+
+@font-face { 
+    font-family: 'Lobster'; 
+    src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face { 
+    font-family: 'Pacifico'; 
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face { 
+    font-family: 'Shrikhand'; 
+    src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+
+* {
+    font-size: 14px;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    margin-right: 5%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 2%;
+}
+
+header h1 {
+    width: 30%;
+    padding-left: 2%;
+    font-family: 'Abril_Fatface';
+}
+
+nav ul li, a {
+    font-family: 'Pacifico';
+
+}
+
+nav ul li {
+    text-align: center;
+    width: auto;
+    min-width: 60px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+nav ul li:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+nav ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* MAIN */
+
+main {
+    padding-top: 8%;
+    min-height: 80vh;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#formulario input{
+    width: 40%;
+}
+
+form {
+    font-family: 'Lobster';
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+form fieldset legend {
+    padding: 5px;
+}
+
+form fieldset label {
+    font-size: 1.1rem;
+}
+
+fieldset {
+    padding: 5%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+form input {
+    width: 95%;
+}
+
+form input[type=submit] {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 50px;
+    font-size: 1.1rem;
+}
+
+.contenido h2 {
+    padding: 5px 10%;
+    font-size: 1.6rem;
+    font-family: 'Lobster';
+}
+
+.contenido p {
+    padding: 5px 10%;
+    text-align: justify;
+}
+
+
+/* FOOTER */
+footer {
+    font-family: 'Abril_Fatface';
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    padding-top: 1%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
